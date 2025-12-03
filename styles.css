@@ -1,0 +1,213 @@
+:root{
+--SkyBlue: #66C2FF;
+--Magenta: #FF00A8;
+--Sunshine: #FFD42E;
+--BrightRed: #FF3B30;
+--GrassGreen: #4CD964;
+--Ink: #1A1A1A;
+--Paper: #FAFAFA;
+--Gray: #777777;
+}
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--Ink);
+    }
+
+    header, nav, footer {
+      flex-shrink: 0;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--Paper);    
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      padding-left: 10px;
+      border-bottom: 1px solid var(--Paper);
+      
+    }
+
+    nav .nav-logo {
+    min-height: 60px;
+    max-height: 120px;
+    margin-top: 40px;
+    }
+
+    nav a {
+    font-family: 'Inter', sans-serif;
+    color: var(--Paper);
+    background-color: var(--SkyBlue);
+    box-shadow: 0 3px 0 var(--Ink);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+nav a:hover {
+    color: var(--Paper);
+    background-color: var(--Magenta);
+    box-shadow: 0 3px 0 var(--Ink);
+    transform: translateY(-2px);
+}
+
+    main {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    footer {
+      background: var(--Paper);
+      height: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      border-top: 1px solid var(--Paper);
+    }
+
+    footer p {
+      color: var(--Ink);
+      margin: 0;
+    }
+
+    footer .footer-logo {
+      height: 4rem;
+    }
+
+.paper-section{
+    background-image: url("assets/Paper.jpg");
+    background-size: cover;        
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 4rem;       
+}          
+
+h1 {
+    font-family: 'Cabin Sketch', sans-serif;
+    color: var(--Magenta);
+    font-size: xx-large;
+}
+
+h2 {
+    font-family: 'Cabin Sketch', sans-serif;
+    color: var(--Paper);
+    font-size: x-large;
+}
+
+h3{
+    font-family: 'Cabin Sketch', sans-serif;
+    color: var(--Magenta);
+    font-size: larger;
+}
+
+.lime {
+    color: var(--GrassGreen);
+}
+
+
+p{
+    font-family: 'Inter','Open Sans', sans-serif;
+    font-size: 18px;
+    color: var(--Paper);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: var(--Gray);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.card p {
+    color: var(--GrassGreen);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: 600;
+    color: var(--Paper);
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid var(--Gray);
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+}
+
+button {
+    padding: 10px;
+    background: var(--SkyBlue);
+    color: var(--Paper);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: var(--Magenta);
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: var(--Ink);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-links a:hover {
+    color: var(--Magenta);
+}
+
+
