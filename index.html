@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color With Ash — Coloring Books for Every Gremlin, Goblin & Gentle Soul</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -21,9 +22,9 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="mt-5">
     <h1>Color with Ash!</h1>
-     <section id="about">
+     <section id="about" class="mt-10 mb-5">
          <h2 class="lime">About</h2>
         <p>
             Color With Ash makes coloring books for humans of all chaos levels — from 
@@ -31,50 +32,16 @@
             Every book is designed to help you relax, laugh, and create something that feels good.
         </p>
     </section>
-      <section id="books">
+      <section id="books" class="mt-5 mb-5">
         <h1>Our Coloring Books</h1>
 
-        <div class="cards">
+        <div id="prodsCards" class="row g-4 px-4 py-5"></div>
 
-            <div class="card">
-                <img src="assets/BuzzingAdventures.png" 
-                     alt="Buzzing Adventures bee and floral coloring book cover">
-                <h3>Buzzing Adventures</h3>
-                <p>
-                    A gentle nature-core coloring escape into fields, flowers, and buzzing little friends.
-                    Perfect for kids, adults, and anyone who needs a quiet moment.  
-                </p>
-                <a class="btn" href="https://www.amazon.com/dp/B0D9R6ZMPX">View on Amazon</a>
-            </div>
-
-            <div class="card">
-                <img src="assets/GoblinCore.png" 
-                     alt="Goblin Core Ritual Coloring Kit cover art">
-                <h3>Goblin Core Ritual Kit</h3>
-                <p>
-                    For the feral at heart. A chaotic blend of affirmations, rituals, and 
-                    unhinged goblin self-care pages.  
-                </p>
-                <a class="btn" href="https://fleurdevie.gumroad.com/l/goblin-ritual-coloring-kit">Get the Kit</a>
-            </div>
-
-            <div class="card">
-                <img src="assets/ScaryKwaii.png" 
-                     alt="Scary Kawaii Halloween Coloring Book cover">
-                <h3>Scary Kawaii Halloween</h3>
-                <p>
-                    A spooky-cute mashup of ghosts, pumpkins, and soft horror delight.  
-                    80+ pages of heart-melting terror.  
-                </p>
-                <a class="btn" href="https://www.amazon.com/dp/B0DHDNTW87">View on Amazon</a>
-            </div>
-
-        </div>
     </section>
 
      <section id="contact">
           <h2 class="lime">Contact Us</h2>
-         <form>
+         <form id="contact-form">
              <label for="name">Name:</label>
              <input type="text" id="name" name="name" required>
              <label for="email">Email:</label>
@@ -93,5 +60,6 @@
         <a href="https://www.facebook.com/ColorWithAshB/" target="_blank"><span class="iconify" data-icon="mdi:facebook"></span> Facebook</a>
     </div>
 </footer>
+<script src="app.js"></script>
 </body>
 </html>
